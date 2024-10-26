@@ -35,21 +35,13 @@ touch eslint.config.js
 import js from "@eslint/js";
 
 export default [
-
     js.configs.recommended,
-
    {
-
        rules: {
-
            "no-unused-vars": "warn",
-
            "no-undef": "warn"
-
        }
-
    }
-
 ];
 
 npx eslint project-dir/ file1.js
@@ -72,9 +64,6 @@ npm install --save-dev eslint-config-prettier
 import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
-
   someConfig,
-
   eslintConfigPrettier,
-  
 ];
