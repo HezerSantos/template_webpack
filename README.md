@@ -68,7 +68,5 @@ export default [
   eslintConfigPrettier,
 ];
 
-"scripts": {
-  "setup": "npm init -y && npm install --save-dev webpack webpack-cli && npx webpack && npm install --save-dev html-webpack-plugin && npm install --save-dev style-loader css-loader && npm install --save-dev html-loader && npm install --save-dev webpack-dev-server && npm install --save-dev --save-exact prettier && node --eval \"require('fs').writeFileSync('.prettierrc', '{}\\n')\" && node --eval \"require('fs').writeFileSync('.prettierignore', '# Ignore artifacts:\\nbuild\\ncoverage\\n')\""
-}
+"setup": "npm install --save-dev webpack webpack-cli html-webpack-plugin style-loader css-loader html-loader webpack-dev-server prettier && npx webpack && node --eval \"require('fs').writeFileSync('.prettierrc', '{}\\n')\" && node --eval \"require('fs').writeFileSync('.prettierignore', '# Ignore artifacts:\\nbuild\\ncoverage\\n')\""
 
